@@ -50,7 +50,7 @@ exports.BattleMovedex = {
 		name: "Sky Attack",
 		pp: 5,
 		priority: 0,
-		secondary: false
+		secondary: false,
 		target: "normal",
 		type: "Flying"
 	},
