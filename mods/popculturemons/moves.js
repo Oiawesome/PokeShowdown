@@ -109,9 +109,6 @@ exports.BattleMovedex = {
 		pp: 10,
 		priority: 0,
 		secondary: false,
-		onBasePower: function(power, user) {
-			if (user.template.id === 'megaman') return power * 1.5;
-		}
 		target: "normal",
 		type: "Techno"
 	},
@@ -241,14 +238,5 @@ exports.BattleMovedex = {
 		secondary: false,
 		target: "normal",
 		type: "Normal"
-	},**/	
-	/******************************************************************
-	New feature: Signature Pokemon
-	- Selected weak moves receive a 1.5x damage boost when used by a
-	  compatible Pokemon or something else that can compare to a 1.5x damage boost.
-
-	Justification:
-	- Adds much flavour and just makes sense out of a LOT of things
-	- Your telling me mega man doesn't deserve 1.5x boost on his mega buster?'
-	******************************************************************/			
+	},**/			
 };
