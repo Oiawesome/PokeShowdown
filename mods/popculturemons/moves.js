@@ -109,6 +109,9 @@ exports.BattleMovedex = {
 		pp: 10,
 		priority: 0,
 		secondary: false,
+		onBasePower: function(power, user) {
+			if (user.template.id === 'megaman') return power * 1.5;
+		}
 		target: "normal",
 		type: "Techno"
 	},
@@ -192,7 +195,7 @@ exports.BattleMovedex = {
 		secondary: false,
 		target: "normal",
 		type: "Fire"
-	},
+	}
 	/**"ascension": {
 		num: 806,
 		accuracy: 100,
@@ -247,36 +250,5 @@ exports.BattleMovedex = {
 	Justification:
 	- Adds much flavour and just makes sense out of a LOT of things
 	- Your telling me mega man doesn't deserve 1.5x boost on his mega buster?'
-	******************************************************************/
-	megabuster: {
-		inherit: true,
-		onBasePower: function(power, user) {
-			if (user.template.id === 'megaman') return power * 1.5;
-		}
-	},
-	firestorm: {
-		inherit: true,
-		onBasePower: function(power, user) {
-			if (user.template.id === 'megamanfire') return power * 1.5;
-		}
-	},
-	hyperbomb: {
-		inherit: true,
-		onBasePower: function(power, user) {
-			if (user.template.id === 'megamanbomb') return power * 1.5;
-		}
-	},	
-	multibuster: {
-		inherit: true,
-		onBasePower: function(power, user) {
-			if (user.template.id === 'megaman') return power * 1.5;
-		}
-	},
-	chargebuster: {
-		inherit: true,
-		onBasePower: function(power, user) {
-			if (user.template.id === 'megaman') return power * 1.5;
-		},
-		accuracy: 70
-	        }			
+	******************************************************************/			
 };
