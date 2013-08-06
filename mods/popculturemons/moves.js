@@ -279,6 +279,5 @@ exports.BattleMovedex = {
 			if (user.template.id === 'megaman') return power * 1.5;
 		},
 		accuracy: 70
-	        }		
-	}	
+	        }			
 };
