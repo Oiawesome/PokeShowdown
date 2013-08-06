@@ -6,7 +6,6 @@ exports.BattleMovedex = {
 	Justification:
 	- These moves fucking suck
 	******************************************************************/
-
         "solarbeam": {
 		num: 76,
 		accuracy: 100,
