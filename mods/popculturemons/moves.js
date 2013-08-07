@@ -192,7 +192,137 @@ exports.BattleMovedex = {
 		secondary: false,
 		target: "normal",
 		type: "Fire"
-	}
+	},
+	"kamehameha": {
+		num: 806,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		desc: "All dbz villans plz.",
+		shortDesc: "KA-ME-HA-ME-HAAAAAAAAAAAAAAAAAAAAAAA!",
+		id: "kamehameha",
+		isViable: true,
+		name: "Kamehameha",
+		pp: 10,
+		priority: 0,
+		secondary: false,
+		target: "normal",
+		type: "Saiyan"
+	},
+	"spiritbomb": {
+		num: 807,
+		accuracy: 100,
+		basePower: 180,
+		category: "Special",
+		desc: "Deals damage to one adjacent target. If this move is successful, the user must recharge on the following turn and cannot make a move.",
+		shortDesc: "User cannot move next turn.",
+		id: "spiritbomb",
+		name: "Spirit Bomb",
+		pp: 5,
+		priority: 0,
+		self: {
+			volatileStatus: 'mustrecharge'
+		},
+		secondary: false,
+		target: "normal",
+		type: "Saiyan"
+	},
+	"kibarrage": {
+		num: 808,
+		accuracy: 100,
+		basePower: 20,
+		category: "Special",
+		desc: "Deals damage to one adjacent target and hits four to five times.",
+		shortDesc: "Hits 4-5 times in one turn.",
+		id: "kibarrage",
+		isViable: true,
+		name: "Ki Barrage",
+		pp: 30,
+		priority: 0,
+		multihit: [2,5],
+		secondary: false,
+		target: "normal",
+		type: "Saiyan"
+	},
+	"cyberslash": {
+		num: 809,
+		accuracy: 100,
+		basePower: 95,
+		category: "Physical",
+		desc: "Sutff here.",
+		shortDesc: "Cut shit and win.",
+		id: "cyberslash",
+		isViable: true,
+		name: "Cyber Slash",
+		pp: 15,
+		priority: 0,
+		isContact: true,
+		secondary: false,
+		target: "normal",
+		type: "Techno"
+	},
+	"spinedecimation": {
+		num: 810,
+		accuracy: 95,
+		basePower: 80,
+		category: "Physical",
+		desc: "Deals damage to one adjacent target with a 10% chance to raise the user's Attack by 1 stage. Makes contact.",
+		shortDesc: "20% chance to boost the user's Attack by 1.",
+		id: "spinedecimation",
+		name: "Spine Decimation",
+		pp: 15,
+		priority: 0,
+		isContact: true,
+		secondary: {
+			chance: 20,
+			self: {
+				boosts: {
+					atk: 1
+				}
+			}
+		},
+		target: "normal",
+		type: "Techno"
+	},
+	"nukecut": {
+		num: 811,
+		accuracy: 100,
+		basePower: 200,
+		category: "Physical",
+		desc: "The user faints and then damage is dealt to all adjacent Pokemon.",
+		shortDesc: "Hits adjacent Pokemon. The user faints.",
+		id: "nukecut",
+		name: "Nuke Cut",
+		pp: 5,
+		priority: 0,
+		selfdestruct: true,
+		secondary: false,
+		target: "allAdjacent",
+		type: "Techno"
+	},
+	"cybersmash": {
+		num: 370,
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		desc: "Deals damage to one adjacent target and lowers the user's Defense and Special Defense by 1 stage. Makes contact.",
+		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
+		id: "cybersmash",
+		isViable: true,
+		name: "Cyber Smash",
+		pp: 5,
+		priority: 0,
+		isContact: true,
+		self: {
+			boosts: {
+				def: -1,
+				spd: -1
+			}
+		},
+		secondary: false,
+		target: "normal",
+		type: "Techno"
+	},	
 	"ascension": {
 		num: 806,
 		accuracy: 100,
@@ -234,7 +364,7 @@ exports.BattleMovedex = {
 				}
 				pokemon.removeVolatile('ascension');
 			}
-		},
+		},		
 		secondary: false,
 		target: "normal",
 		type: "Saiyan"
