@@ -193,7 +193,7 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Fire"
 	}
-	/**"ascension": {
+	"ascension": {
 		num: 806,
 		accuracy: 100,
 		basePower: 0,
@@ -228,15 +228,15 @@ exports.BattleMovedex = {
 			duration: 1,
 			onAfterMoveSecondarySelf: function(pokemon, target, move) {
 				if (pokemon.template.speciesid === 'gokusupersaiyan' && pokemon.formeChange('Meloetta')) {
-					this.add('-formechange', pokemon, 'Meloetta');
-				} else if (pokemon.formeChange('Meloetta-Pirouette')) {
-					this.add('-formechange', pokemon, 'Meloetta-Pirouette');
+					this.add('-formechange', pokemon, 'Goku');
+				} else if (pokemon.formeChange('Goku-Super-Saiyan')) {
+					this.add('-formechange', pokemon, 'Goku-Super-Saiyan');
 				}
-				pokemon.removeVolatile('relicsong');
+				pokemon.removeVolatile('ascension');
 			}
 		},
 		secondary: false,
 		target: "normal",
-		type: "Normal"
-	},**/			
+		type: "Saiyan"
+	}			
 };
