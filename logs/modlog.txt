@@ -1,0 +1,12 @@
+[2013-08-06T19:00:48.080Z] (battle-popculturemons-1) Oialt forced a win for oialt.
+[2013-08-06T20:33:44.004Z] (lobby) Leafshield was promoted to Room Owner by Oialt.
+[2013-08-06T20:33:46.857Z] (lobby) Leafshield was promoted to Leader by Oialt.
+[2013-08-06T21:05:40.054Z] (lobby) Nollan was promoted to Leader by Oiawesome.
+[2013-08-07T00:07:31.877Z] (lobby) Jewzilla was promoted to Moderator by Oiawesome.
+[2013-08-07T04:18:58.967Z] (lobby) Jewzilla was promoted to Room Owner by Oiawesome.
+[2013-08-07T04:19:05.978Z] (lobby) (Nollan was demoted to Voice by Oiawesome.)
+[2013-08-07T04:19:08.005Z] (lobby) Jewzilla was promoted to Leader by Oiawesome.
+[2013-08-07T04:19:12.821Z] (lobby) (Nollan was demoted to a regular user by Oiawesome.)
+[2013-08-07T16:00:59.104Z] (lobby) Teafany was promoted to Driver by Oiawesome.
+[2013-08-07T16:06:58.753Z] (lobby) Pikachuun was promoted to Driver by Oiawesome.
+[2013-08-07T16:07:41.393Z] (lobby) miah Jenna-Tills was promoted to Driver by Oiawesome.
