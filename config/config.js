@@ -112,7 +112,7 @@ exports.consoleips = ['stevoduhhero', 'oiawesome','oialt', '10.0.0.12'];
 exports.watchconfig = true;
 
 // logchat - whether to log chat rooms.
-exports.logchat = false;
+exports.logchat = true;
 
 // loguserstats - how often (in milliseconds) to write user stats to the
 // lobby log. This has no effect if `logchat` is disabled.
