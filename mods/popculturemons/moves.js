@@ -368,5 +368,21 @@ exports.BattleMovedex = {
 		secondary: false,
 		target: "normal",
 		type: "Saiyan"
-	}			
+	},
+	"ameterasy": {
+		num: 802,
+		accuracy: 85,
+		basePower: 120,
+		category: "Special",
+		desc: "Deals damage to one adjacent target.",
+		shortDesc: "FLAMES FLAMES FLAMES.",
+		id: "ameterasu",
+		isViable: true,
+		name: "Ameterasu",
+		pp: 5,
+		priority: 0,
+		secondary: false,
+		target: "normal",
+		type: "Fire"
+	}	
 };
